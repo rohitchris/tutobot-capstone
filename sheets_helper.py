@@ -1,3 +1,4 @@
+
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 import pandas as pd
@@ -45,3 +46,4 @@ def write_sheet(sheet_name, row_index, data_dict):
 def find_column_index(sheet_name, col_name):
     df = read_sheet(sheet_name)
     return list(df.columns).index(col_name)
+
